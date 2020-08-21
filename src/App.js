@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+
 import './App.css';
+import Main from './components/Main';
+
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid className="bg-colour bg-splash">
+      <Navbar expand="lg" className="bg-colour">
+        <Navbar.Brand>
+          <Link className="navbar-brand custom-brand" to="/">Megan Elisabeth Finch</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+          <Nav>
+            <Link className="nav-link" to="/about">
+              About
+            </Link>
+            <Nav.Link href="https://github.com/meganelisabethfinch">
+              <FontAwesomeIcon icon={faGithub} />
+            </Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/megan-finch/">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <Main />
+    </Container>
   );
 }
 
