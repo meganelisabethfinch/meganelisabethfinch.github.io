@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 
 import './App.css';
+import './Menu.css';
 import Main from './components/Main';
 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
         <Navbar.Brand>
           <Link className="navbar-brand custom-brand" to="/">Megan Elisabeth Finch</Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle id="toggle" aria-controls="basic-navbar-nav"><FontAwesomeIcon icon={faBars} /></Navbar.Toggle>
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav>
             <Link className="nav-link" to="/about">
@@ -34,6 +36,7 @@ function App() {
       </Navbar>
       <Main />
     </Container>
+
   );
 }
 
