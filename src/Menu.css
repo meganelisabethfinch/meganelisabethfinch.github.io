@@ -10,3 +10,35 @@
     left: 0%;
 }
 */
+
+@media (max-width: 992px) {
+    .navbar-collapse .nav-link {
+        margin: 40px 20% 0 10%;
+    }
+
+    #menu {
+        position: fixed;
+        top: 65px;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        background-color: white;
+        z-index: 1;
+        transition: left 0.5s ease;
+    }
+ 
+    #menu.collapsing {
+        transition: height 0s ease;
+    }
+    
+    #menu.show {
+        left: 0%;
+        transition: left 0.5s ease;
+
+    }
+
+    .navbar-toggler.collapsed ~ #menu {
+        transition: left 0.5s ease;
+
+    }
+}

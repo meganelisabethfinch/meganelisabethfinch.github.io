@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -19,8 +19,8 @@ function App() {
         <Navbar.Brand>
           <Link className="navbar-brand custom-brand" to="/">Megan Elisabeth Finch</Link>
         </Navbar.Brand>
-        <Navbar.Toggle id="toggle" aria-controls="basic-navbar-nav"><FontAwesomeIcon icon={faBars} /></Navbar.Toggle>
-        <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+        <Navbar.Toggle id="toggle" aria-controls="menu"><FontAwesomeIcon icon={faBars} /></Navbar.Toggle>
+        <Navbar.Collapse className="justify-content-end" id="menu">
           <Nav>
             <Link className="nav-link" to="/about">
               About
