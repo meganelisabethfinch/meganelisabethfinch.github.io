@@ -23,3 +23,13 @@
 .text-serif {
   font-family: 'Noto Sans', sans-serif;
 }
+
+.unstyled-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.unstyled-link:hover {
+  color:inherit;
+  text-decoration: none;
+}

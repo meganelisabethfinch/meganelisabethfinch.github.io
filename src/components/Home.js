@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 // and pass this into the ReactTypingEffect as the text prop
 // then overwrite the displayTextRenderer func on the ReactTypingEffect to return an h1 with a link
 
-const features = [{text: "a game made in under 72 hours", link: "/1234"}, {text: "something cool", link: "/5678"}];
+const features = [{text: "a game made in under 72 hours", link: "/projects/1234"}, {text: "something cool", link: "/projects/5678"}];
 
 class Home extends Component {
     render() {
@@ -21,6 +21,18 @@ class Home extends Component {
                     speed={100} 
                     eraseSpeed={50} 
                     text={features.map(feature => feature.text)}
+                    displayTextRenderer={(text, i) => {
+                        return (
+                          <Link className="unstyled-link" to={features[i].link}>
+                            {text.split('').map((char, i) => {
+                              const key = `${i}`;
+                              return (
+                                <span key={key}>{char}</span>
+                              );
+                            })}
+                          </Link>
+                        );
+                      }}      
                     />
                </h1>
            </Jumbotron>
