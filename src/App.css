@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
 }
 
 .bg-colour { 
@@ -17,7 +16,8 @@
 }
 
 .custom-brand {
-  color: white !important; 
+  font-family: 'Playfair Display', serif;
+  /* color: white !important; */
 }
 
 .text-serif {

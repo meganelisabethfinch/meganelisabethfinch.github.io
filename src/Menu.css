@@ -1,21 +1,8 @@
-
-
-
-/*
-.navbar-collapse {
-    left: 100%;
-}
-
-.navbar-collapse.show {
-    left: 0%;
-}
-*/
-
 @media (max-width: 992px) {
     .navbar-collapse .nav-link {
-        margin: 40px 20% 0 10%;
+        margin: 30px 10% 0 10%;
     }
-
+    
     #menu {
         position: fixed;
         top: 65px;
@@ -26,19 +13,18 @@
         z-index: 1;
         transition: left 0.5s ease;
     }
- 
-    #menu.collapsing {
-        transition: height 0s ease;
-    }
     
     #menu.show {
-        left: 0%;
-        transition: left 0.5s ease;
-
+        left: 0;
     }
 
+    #menu.collapsing {
+        transition: none;
+    }
+
+    /*
     .navbar-toggler.collapsed ~ #menu {
         transition: left 0.5s ease;
-
     }
+    */
 }
