@@ -1,14 +1,17 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Col, Card, Button } from 'react-bootstrap';
 
 const Excerpt = (props) => (
-    <Card style={{ width: '18rem' }}>
-        <Card.Body>
-            <Card.Title>{props.title}</Card.Title>
-            <Card.Text>{props.featuredText}</Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-    </Card>
+    <li class="cards_item">
+        <Card className="card">
+            <Card.Body>
+                <Card.Title>{props.title}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">subtitle</Card.Subtitle>
+                <Card.Text>{props.featuredText}</Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+        </Card>
+    </li>
 );
 
 export default Excerpt;

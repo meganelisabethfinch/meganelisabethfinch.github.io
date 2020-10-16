@@ -17,7 +17,7 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 function App() {
   return (
     <Container fluid className="bg-colour bg-splash">
-      <Navbar collapseOnSelect expand="lg" className="bg-colour">
+      <Navbar collapseOnSelect expand="md" className="bg-colour">
         <Navbar.Brand>
           <Link className="navbar-brand text-light custom-brand" to="/">Megan Elisabeth Finch</Link>
         </Navbar.Brand>
@@ -40,11 +40,7 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
-    <Row>
-      <Col>
-        <Main />
-      </Col>
-    </Row>
+    <Main />
     </Container>
 
   );

@@ -1,4 +1,5 @@
-@media (max-width: 992px) {
+/* md for tablets */
+@media (max-width: 768px) {
     .navbar-collapse .nav-link {
         margin: 30px 10% 0 10%;
     }

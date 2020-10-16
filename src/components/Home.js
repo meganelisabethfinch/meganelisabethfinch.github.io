@@ -3,12 +3,7 @@ import { Jumbotron } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from 'react-router-dom';
 
-// this.props.features = [{text: "a game made in under 72 hours", link: 1234}, {text: "a ray tracer", link:5678}] etc...
-// then map the text fields to an array e.g. texts=["a game made in X", "a ray tracer"]
-// and pass this into the ReactTypingEffect as the text prop
-// then overwrite the displayTextRenderer func on the ReactTypingEffect to return an h1 with a link
-
-const features = [{text: "a game made in under 72 hours", link: "/projects/1234"}, {text: "something cool", link: "/projects/5678"}];
+const features = [{text: "a game made in under 72 hours", id: "1234"}, {text: "something cool", id: "5678"}];
 
 class Home extends Component {
     render() {
@@ -23,7 +18,7 @@ class Home extends Component {
                     text={features.map(feature => feature.text)}
                     displayTextRenderer={(text, i) => {
                         return (
-                          <Link className="unstyled-link" to={features[i].link}>
+                          <Link className="unstyled-link" to={"/blog/" + features[i].id}>
                             {text.split('').map((char, i) => {
                               const key = `${i}`;
                               return (
