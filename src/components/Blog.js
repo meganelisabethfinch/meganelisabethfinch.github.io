@@ -14,13 +14,18 @@ const excerpts = [{ title: 'Ray tracer', featuredText: 'my text'},
 { title: 'X', featuredText: 'y'}
 ];
 
-const Blog = () => (
+class Blog extends Component {
+
+    render() {
+        return (
         <Col>
             <ul class="cards">
                 {excerpts.map(excerpt => <Excerpt key={excerpt.id} {...excerpt} />)}
             </ul>
         </Col>
-);
+        )
+    }
+};
 
 // {props.excerpts.map(excerpt => <Excerpt key={excerpt.id} {...excerpt} />)}
 
