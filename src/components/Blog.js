@@ -1,18 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, CardDeck, Card } from 'react-bootstrap';
 import Excerpt from './Excerpt';
-
-const excerpts = [{ title: 'Ray tracer', featuredText: 'my text'}, 
-{ title: 'Cosmic Taxi', featuredText: 'a game made in 72 hours with friends'},
-{ title: 'A cool project', featuredText: 'Idk what it is, but it\'s cool' },
-{ title: 'Compiler', featuredText: 'x'},
-{ title: 'X', featuredText: 'y'},
-{ title: 'X', featuredText: 'y'},
-{ title: 'X', featuredText: 'y'},
-{ title: 'X', featuredText: 'y'},
-{ title: 'X', featuredText: 'y'},
-{ title: 'X', featuredText: 'y'}
-];
+import { articles } from './data';
 
 class Blog extends Component {
 
@@ -20,7 +9,7 @@ class Blog extends Component {
         return (
         <Col>
             <ul class="cards">
-                {excerpts.map(excerpt => <Excerpt key={excerpt.id} {...excerpt} />)}
+                {articles.map(article => <Excerpt key={article.id} {...article} />)}
             </ul>
         </Col>
         )
