@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, CardDeck, Card } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import Excerpt from './Excerpt';
 import { articles } from './data';
 
