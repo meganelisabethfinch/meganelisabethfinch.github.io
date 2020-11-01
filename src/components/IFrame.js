@@ -1,10 +1,10 @@
 import React from 'react';
 
 const IFrame = (props) => {
-    if (props.visible) {
+    if (props.iframeData !== null && props.iframeData !== undefined) {
         return (
-            <iframe frameborder="0" src="https://itch.io/embed-upload/2916835?color=ffffff" allowfullscreen="" width="1100" height="750">
-                <a href="https://imaginaryaround.itch.io/cosmic-taxi">Play Cosmic Taxi on itch.io</a>
+            <iframe frameborder="0" src={props.iframeData.src} allowfullscreen="" width={props.iframeData.width} height={props.iframeData.height}>
+                <a href={props.iframeData.href}>Play Cosmic Taxi on itch.io</a>
             </iframe>
         );
     } else {
