@@ -10,7 +10,7 @@ const Excerpt = (props) => (
             <Card.Img variant="top" src={require(`../images/${props.image}`)} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">subtitle</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">{props.type}</Card.Subtitle>
                 <Card.Text>{props.fragment}</Card.Text>
                 <Button variant="primary">Go somewhere</Button>
                 

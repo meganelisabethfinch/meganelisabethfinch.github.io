@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
+import IFrame from './IFrame';
 import { articles } from './data';
 
 // set article = articles.find(x => x.id == id)
@@ -7,20 +8,15 @@ import { articles } from './data';
 // else render the article
 
 function Article({match:{params:{id}}}) {
-    const article = articles.find(x => x.id == id);
-    if (article == undefined) {
-        article = articles.find(x => x.id == "404");
-    } 
-    return <Col lg={true} className="article">
-        <h2 className="custom-brand">{article.title}</h2>
-        <iframe frameborder="0" src="https://itch.io/embed-upload/2916835?color=ffffff" allowfullscreen="" width="1100" height="750">
-            <a href="https://imaginaryaround.itch.io/cosmic-taxi">Play Cosmic Taxi on itch.io</a>
-        </iframe>
+    const post = articles.find(x => x.id === id);
+    
+    return (<Col lg={true} className="article">
+        <h2 className="custom-brand">{post.title}</h2>
+        <IFrame visible={post.type === "Interactive Project"}/>
         <p>
             hi there
         </p>
-    </Col>
-    
+    </Col>)
 };
 
 export default Article;
