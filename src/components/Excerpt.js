@@ -11,8 +11,7 @@ const Excerpt = (props) => (
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{props.type}</Card.Subtitle>
-                <Card.Text>{props.fragment}</Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>{props.excerptText}</Card.Text>
                 
             </Card.Body>
         </Link>

@@ -12,7 +12,7 @@ function Article({match:{params:{id}}}) {
     
     return (<Col lg={true} className="article">
         <h2 className="custom-brand">{post.title}</h2>
-        <IFrame visible={post.type === "Interactive Project"} iframeData={post.iframeData} />
+        <IFrame iframeData={post.iframeData} />
         <p>
             hi there
         </p>

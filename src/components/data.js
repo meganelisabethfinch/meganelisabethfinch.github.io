@@ -4,7 +4,8 @@ export const articles = [
         "title": "Cosmic Taxi",
         "feature" : true,
         "type" : "Interactive Project",
-        "fragment": "a game made in under 72 hours",
+        "jumbotronText" : "a game made in under 72 hours", 
+        "excerptText": "A game made with friends in under 72 hours for Ludum Dare 47, for the theme of 'stuck in a loop'.",
         "image" : "cosmic-taxi.jpg",
         "iframeData" : {
             "src" : "https://itch.io/embed-upload/2916835?color=ffffff",
@@ -16,9 +17,9 @@ export const articles = [
     {
         "id": "ray-tracer",
         "title": "Ray Tracer",
-        "feature" : true,
+        "feature" : false,
         "type" : "Article",
-        "fragment": "a ray tracer",
+        "excerptText": "a ray tracer",
         "image" : "cosmic-taxi.jpg"
     }
 ];

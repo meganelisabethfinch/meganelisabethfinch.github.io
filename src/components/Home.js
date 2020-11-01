@@ -15,7 +15,7 @@ class Home extends Component {
                     typingDelay={100} 
                     speed={100} 
                     eraseSpeed={50} 
-                    text={featuredPosts.map(post => post.fragment)}
+                    text={featuredPosts.map(post => post.jumbotronText)}
                     displayTextRenderer={(text, i) => {
                         return (
                           <Link className="unstyled-link" to={"/blog/" + featuredPosts[i].id}>
