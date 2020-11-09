@@ -17,5 +17,6 @@ class Blog extends Component {
 };
 
 // {props.excerpts.map(excerpt => <Excerpt key={excerpt.id} {...excerpt} />)}
+// 
 
 export default Blog;

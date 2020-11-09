@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import { Row } from 'react-bootstrap';
 
 import './App.css';
-import './Menu.css';
 import Main from './components/Main';
 import Menu from './components/Menu';
 

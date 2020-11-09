@@ -6,7 +6,7 @@ import { articles } from './data';
 
 class Home extends Component {
     render() {
-        var featuredPosts = articles.filter(article => article.feature)
+        var featuredPosts = articles.filter(article => article.feature);
         return (
            <Jumbotron className="bg-transparent">
                <h1 className="text-light custom-brand">
@@ -15,7 +15,7 @@ class Home extends Component {
                     typingDelay={100} 
                     speed={100} 
                     eraseSpeed={50} 
-                    text={featuredPosts.map(post => post.jumbotronText)}
+                    text={featuredPosts.map(post => post.metadata.jumbotronText)}
                     displayTextRenderer={(text, i) => {
                         return (
                           <Link className="unstyled-link" to={"/blog/" + featuredPosts[i].id}>

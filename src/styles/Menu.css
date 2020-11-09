@@ -22,10 +22,4 @@
     #menu.collapsing {
         transition: none;
     }
-
-    /*
-    .navbar-toggler.collapsed ~ #menu {
-        transition: left 0.5s ease;
-    }
-    */
 }

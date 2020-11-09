@@ -11,11 +11,9 @@ function Article({match:{params:{id}}}) {
     const post = articles.find(x => x.id === id);
     
     return (<Col lg={true} className="article">
-        <h2 className="custom-brand">{post.title}</h2>
+        <h2 className="custom-brand">{post.metadata.title}</h2>
+        <div dangerouslySetInnerHTML={post.body}/>
         <IFrame iframeData={post.iframeData} />
-        <p>
-            hi there
-        </p>
     </Col>)
 };
 
