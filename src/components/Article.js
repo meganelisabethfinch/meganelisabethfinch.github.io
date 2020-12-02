@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import IFrame from './IFrame';
-import { articles } from './data';
+import { articles } from './articles';
 
 // set article = articles.find(x => x.id == id)
 // if (article == undefined), render 404
@@ -9,12 +9,15 @@ import { articles } from './data';
 
 function Article({match:{params:{id}}}) {
     const post = articles.find(x => x.id === id);
-    
-    return (<Col lg={true} className="article">
-        <h2 className="custom-brand">{post.metadata.title}</h2>
-        <div dangerouslySetInnerHTML={post.body}/>
-        <IFrame iframeData={post.iframeData} />
-    </Col>)
+    if (post === undefined) {
+        const notFound = articles.find(x => x.id === "404");
+    } else {
+        return (<Col lg={true} className="article">
+            <h2 className="custom-brand">{post.blogData.excerptData.title}</h2>
+            <div dangerouslySetInnerHTML={post.blogData.body}/>
+            <IFrame iframeData={post.blogData.iframeData} />
+        </Col>)
+    }
 };
 
 export default Article;

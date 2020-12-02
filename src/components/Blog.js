@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import Excerpt from './Excerpt';
-import { articles } from './data';
+import { articles } from './articles';
 
 class Blog extends Component {
 
@@ -9,14 +9,11 @@ class Blog extends Component {
         return (
         <Col>
             <ul class="cards">
-                {articles.map(article => <Excerpt key={article.id} {...article} />)}
+                {articles.filter(article => article.blogFeature).map(article => <Excerpt key={article.id} link={article.id} {...article.blogData.excerptData} />)}
             </ul>
         </Col>
         )
     }
 };
-
-// {props.excerpts.map(excerpt => <Excerpt key={excerpt.id} {...excerpt} />)}
-// 
 
 export default Blog;

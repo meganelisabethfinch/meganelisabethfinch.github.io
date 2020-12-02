@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const Excerpt = (props) => (
     <li class="cards_item">
         <Card className="card">
-        <Link className="unstyled-link" to={{pathname: `/blog/${props.id}` }}>
+        <Link className="unstyled-link" to={{pathname: `/blog/${props.link}` }}>
 
-            <Card.Img variant="top" src={require(`../images/${props.metadata.image}`)} />
+            <Card.Img variant="top" src={require(`../images/${props.image}`)} />
             <Card.Body>
-                <Card.Title>{props.metadata.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{props.metadata.type}</Card.Subtitle>
-                <Card.Text>{props.metadata.excerptText}</Card.Text>
+                <Card.Title>{props.title}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">{props.type}</Card.Subtitle>
+                <Card.Text>{props.excerptText}</Card.Text>
                 
             </Card.Body>
         </Link>

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Jumbotron } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from 'react-router-dom';
-import { articles } from './data';
+import { articles } from './articles';
 
 class Home extends Component {
     render() {
-        var featuredPosts = articles.filter(article => article.feature);
+        var featuredPosts = articles.filter(article => article.jumbotronFeature).map(article => article.jumbotronData);
         return (
            <Jumbotron className="bg-transparent">
                <h1 className="text-light custom-brand">
@@ -15,7 +15,7 @@ class Home extends Component {
                     typingDelay={100} 
                     speed={100} 
                     eraseSpeed={50} 
-                    text={featuredPosts.map(post => post.metadata.jumbotronText)}
+                    text={featuredPosts.map(post => post.jumbotronText)}
                     displayTextRenderer={(text, i) => {
                         return (
                           <Link className="unstyled-link" to={"/blog/" + featuredPosts[i].id}>
@@ -31,7 +31,6 @@ class Home extends Component {
                     />
                </h1>
            </Jumbotron>
-           
         )
     }
 }
