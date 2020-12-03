@@ -9,7 +9,7 @@ class Blog extends Component {
         return (
         <Col>
             <ul class="cards">
-                {articles.filter(article => article.blogFeature).map(article => <Excerpt key={article.id} link={article.id} {...article.blogData.excerptData} />)}
+                {articles.filter(article => article.blogFeature).map(article => <Excerpt key={article.id} link={article.id} {...article.excerptData} />)}
             </ul>
         </Col>
         )
