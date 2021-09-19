@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const Excerpt = (props) => (
+const BlogCard = (props) => (
     <li class="cards_item">
         <Card className="card">
         <Link className="unstyled-link" to={{pathname: `/blog/${props.link}` }}>
@@ -20,4 +20,4 @@ const Excerpt = (props) => (
     </li>
 );
 
-export default Excerpt;
+export default BlogCard;
