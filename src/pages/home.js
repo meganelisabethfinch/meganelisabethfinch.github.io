@@ -6,7 +6,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 /* Routing imports */
 import { Link } from 'react-router-dom';
-import { articles } from '../components/articles';
+import { articles } from '../constants/articles';
 
 class Home extends Component {
     render() {

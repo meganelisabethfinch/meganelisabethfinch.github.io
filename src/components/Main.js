@@ -3,8 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from '../pages/home';
 import About from '../pages/about';
-import Blog from './Blog';
-import Article from './Article';
+import Blog from '../pages/blog';
+import Article from '../pages/article';
 
 const Main = () => (
     <Switch>
