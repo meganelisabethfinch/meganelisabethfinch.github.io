@@ -14,7 +14,7 @@ import '../styles/header.css';
 const Header = () => (
   <Navbar collapseOnSelect expand="md" fixed="top" className="bg-colour">
     <Navbar.Brand>
-      <Link className="navbar-brand text-light custom-brand" to="/">Megan Elisabeth Finch</Link>
+      <Link className="navbar-brand text-light my-brand" to="/">Megan Elisabeth Finch</Link>
     </Navbar.Brand>
     <Navbar.Toggle id="toggle" aria-controls="menu"><FontAwesomeIcon icon={faBars} /></Navbar.Toggle>
     <Navbar.Collapse className="justify-content-end" id="menu">

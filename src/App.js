@@ -17,9 +17,10 @@ const Blog = lazy(() => import ('./pages/blog'));
 function App() {
   return (
     <Container fluid className="bg-colour bg-splash">
+      <BrowserRouter>
       <Header/>
       <Row className="bg-colour" style={{ paddingTop: '65px' }}>
-        <BrowserRouter>
+
         <Suspense fallback={<p>Loading...</p>}>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -28,8 +29,8 @@ function App() {
           <Route path="/blog/:id" component={Article} />
         </Switch>
         </Suspense>
-        </BrowserRouter>
       </Row>
+      </BrowserRouter>
     </Container>
   );
 }

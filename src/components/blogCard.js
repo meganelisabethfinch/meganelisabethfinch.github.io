@@ -2,14 +2,16 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import '../styles/blogCard.css';
+
 const BlogCard = (props) => (
     <li class="cards_item">
-        <Card className="card">
+        <Card className="blogCard card border-0">
         <Link className="unstyled-link" to={{pathname: `/blog/${props.link}` }}>
 
-            <Card.Img variant="top" src={require(`../images/${props.image}`)} />
+            <Card.Img className="blogCardImg" variant="top" src={require(`../images/${props.image}`)} />
             <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
+                <Card.Title className="my-brand">{props.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{props.type}</Card.Subtitle>
                 <Card.Text>{props.excerptText}</Card.Text>
                 

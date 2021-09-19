@@ -13,7 +13,7 @@ class Home extends Component {
         var featuredPosts = articles.filter(article => article.jumbotronFeature).map(article => article.jumbotronData);
         return (
            <Jumbotron className="bg-transparent">
-               <h1 className="text-light custom-brand">
+               <h1 className="text-light my-brand">
                    Show me<br />
                    <ReactTypingEffect 
                     typingDelay={100} 

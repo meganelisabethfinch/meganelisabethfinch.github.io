@@ -1,0 +1,22 @@
+.blogCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blogCardImg {
+    object-fit: cover;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+/* md for tablets */
+@media (min-width: 768px) {
+    .cards_item {
+      width: 33.3333%;
+    }
+}

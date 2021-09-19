@@ -3,6 +3,8 @@ import { Col } from 'react-bootstrap';
 import BlogCard from '../components/blogCard';
 import { articles } from '../constants/articles';
 
+import '../styles/blog.css';
+
 const Blog = () => (
     <Col>
         <ul class="cards">
