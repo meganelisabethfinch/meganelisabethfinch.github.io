@@ -1,21 +1,20 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import { Row } from 'react-bootstrap';
+
+/* React-Bootstrap imports */
+import { Container, Row } from 'react-bootstrap';
 
 import './App.css';
 import Main from './components/Main';
-import Menu from './components/Menu';
+import Header from './components/header';
 
 function App() {
   return (
     <Container fluid className="bg-colour bg-splash">
-      
-    <Menu/>
-    <Row className="bg-colour" style={{ paddingTop: '65px' }}>
-    <Main/>
-    </Row>
+      <Header/>
+      <Row className="bg-colour" style={{ paddingTop: '65px' }}>
+        <Main/>
+      </Row>
     </Container>
-
   );
 }
 

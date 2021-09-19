@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+
+/* React-Bootstrap imports */
 import { Jumbotron } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect';
+
+/* Routing imports */
 import { Link } from 'react-router-dom';
-import { articles } from './articles';
+import { articles } from '../components/articles';
 
 class Home extends Component {
     render() {
