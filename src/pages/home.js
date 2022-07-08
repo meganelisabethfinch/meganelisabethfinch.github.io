@@ -10,26 +10,26 @@ import { articles } from '../constants/articles';
 
 class Home extends Component {
     render() {
-        var featuredPosts = articles.filter(article => article.jumbotronFeature).map(article => article.jumbotronData);
+        var headlines = ["I write code.", "I make music."];
         return (
            <Jumbotron className="bg-transparent">
                <h1 className="text-light my-brand">
-                   Show me<br />
+                   Hi, I'm Megan.<br />
                    <ReactTypingEffect 
                     typingDelay={100} 
                     speed={100} 
                     eraseSpeed={50} 
-                    text={featuredPosts.map(post => post.jumbotronText)}
+                    text={headlines}
                     displayTextRenderer={(text, i) => {
                         return (
-                          <Link className="unstyled-link" to={"/blog/" + featuredPosts[i].id}>
+                          <div>
                             {text.split('').map((char, i) => {
                               const key = `${i}`;
                               return (
                                 <span key={key}>{char}</span>
                               );
                             })}
-                          </Link>
+                          </div>
                         );
                       }}      
                     />
