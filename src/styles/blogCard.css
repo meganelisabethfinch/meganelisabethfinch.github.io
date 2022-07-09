@@ -3,7 +3,13 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+    
+.blogCard:hover {
+    transform: scale(1.02);
+  }
 
 .blogCardImg {
     object-fit: cover;

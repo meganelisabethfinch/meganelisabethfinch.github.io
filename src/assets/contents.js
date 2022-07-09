@@ -115,14 +115,14 @@ const blogData = [
         display: true,
         card: {
             title: "Triolingo",
-            img: "ray-tracer.png",
+            img: "triolingo.png",
             text: "exciting stuff",
             date: new Date(2022, 7, 9),
             type: "Hackathon"
         },
         body: {
             text: "what fun",
-            md: "ray-tracer.md"
+            md: "triolingo.md"
         }
     },
     {

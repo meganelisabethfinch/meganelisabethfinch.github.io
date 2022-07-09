@@ -14,7 +14,7 @@ const BlogCard = (props) => (
                 <Card.Title><b>{props.title}</b></Card.Title>
                 
                 <Card.Text>{props.text}</Card.Text>
-                <Card.Subtitle className="mb-2 text-muted d-flex justify-content-between">
+                <Card.Subtitle className="mb-2 text-muted d-flex align-items-end justify-content-between">
                     <div>{props.type}</div>
                     <div>{props.date.toLocaleDateString()}</div>
                 </Card.Subtitle>
