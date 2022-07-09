@@ -3,12 +3,17 @@ import { Col } from 'react-bootstrap';
 import BlogCard from '../components/blogCard';
 import { articles } from '../constants/articles';
 
+import { 
+    blogData
+} from '../assets/contents';
+
+/* CSS imports */
 import '../styles/blog.css';
 
 const Blog = () => (
     <Col>
         <ul class="cards">
-            {articles.filter(article => article.blogFeature).map(article => <BlogCard key={article.id} link={article.id} {...article.excerptData} />)}
+            {blogData.filter(post => post.display).map(post => <BlogCard key={post.id} link={post.id} {...post.card} />)}
         </ul>
     </Col>
 );

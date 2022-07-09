@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 
 /* React-Bootstrap imports */
 import { Container, Row } from 'react-bootstrap';
@@ -7,7 +7,7 @@ import './styles/app.css';
 import Header from './components/header';
 
 /* Routing imports */
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter, useLocation, withRouter } from 'react-router-dom';
 
 const Home = lazy(() => import ('./pages/home'));
 const About = lazy(() => import ('./pages/about'));
@@ -20,7 +20,6 @@ function App() {
       <BrowserRouter>
       <Header/>
       <Row className="bg-colour" style={{ paddingTop: '65px' }}>
-
         <Suspense fallback={<p>Loading...</p>}>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -34,5 +33,6 @@ function App() {
     </Container>
   );
 }
+
 
 export default App;

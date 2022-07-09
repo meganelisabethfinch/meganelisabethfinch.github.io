@@ -4,22 +4,21 @@ import React, { Component } from 'react';
 import { Jumbotron } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect';
 
-/* Routing imports */
-import { Link } from 'react-router-dom';
-import { articles } from '../constants/articles';
+import {
+  homeData
+} from '../assets/contents';
 
 class Home extends Component {
     render() {
-        var headlines = ["I write code.", "I make music."];
         return (
-           <Jumbotron className="bg-transparent">
+           <Jumbotron className="bg-transparent mx-auto px-5">
                <h1 className="text-light my-brand">
-                   Hi, I'm Megan.<br />
+                   {homeData.static}<br />
                    <ReactTypingEffect 
                     typingDelay={100} 
                     speed={100} 
                     eraseSpeed={50} 
-                    text={headlines}
+                    text={homeData.animated}
                     displayTextRenderer={(text, i) => {
                         return (
                           <div>
@@ -34,6 +33,12 @@ class Home extends Component {
                       }}      
                     />
                </h1>
+               <p class="lead mt-4">
+                {homeData.lead}
+               </p>
+               <p class="lead">
+                <a class="btn btn-primary btn-md" href={homeData.callToAction.href} role="button">{homeData.callToAction.text}</a>
+               </p>
            </Jumbotron>
         )
     }

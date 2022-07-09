@@ -9,12 +9,15 @@ const BlogCard = (props) => (
         <Card className="blogCard card border-0">
         <Link className="unstyled-link" to={{pathname: `/blog/${props.link}` }}>
 
-            <Card.Img className="blogCardImg" variant="top" src={require(`../images/ray-tracer.png`)} />
+            <Card.Img className="blogCardImg" variant="top" src={require(`../images/${props.img}`)} />
             <Card.Body>
                 <Card.Title className="my-brand">{props.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{props.type}</Card.Subtitle>
-                <Card.Text>{props.excerptText}</Card.Text>
                 
+                <Card.Text>{props.text}</Card.Text>
+                <Card.Subtitle className="mb-2 text-muted d-flex justify-content-between">
+                    <div>{props.type}</div>
+                    <div>{props.date.toLocaleDateString()}</div>
+                </Card.Subtitle>
             </Card.Body>
         </Link>
 

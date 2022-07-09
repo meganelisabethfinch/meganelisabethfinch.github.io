@@ -9,6 +9,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
+/* Content imports */
+import {
+  socials
+} from '../assets/contents';
+
+/* CSS imports */
 import '../styles/header.css';
 
 const Header = () => (
@@ -25,10 +31,10 @@ const Header = () => (
         <Nav.Link eventKey="2" as={Link} to="/blog">
           Blog
         </Nav.Link>
-        <Nav.Link href="https://github.com/meganelisabethfinch">
+        <Nav.Link href={socials.github}>
           <FontAwesomeIcon icon={faGithub} />
         </Nav.Link>
-        <Nav.Link href="https://www.linkedin.com/in/megan-finch/">
+        <Nav.Link href={socials.linkedin}>
           <FontAwesomeIcon icon={faLinkedinIn} />
         </Nav.Link>
       </Nav>
