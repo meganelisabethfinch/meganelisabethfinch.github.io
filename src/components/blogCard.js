@@ -11,7 +11,7 @@ const BlogCard = (props) => (
 
             <Card.Img className="blogCardImg" variant="top" src={require(`../images/${props.img}`)} />
             <Card.Body>
-                <Card.Title className="my-brand">{props.title}</Card.Title>
+                <Card.Title><b>{props.title}</b></Card.Title>
                 
                 <Card.Text>{props.text}</Card.Text>
                 <Card.Subtitle className="mb-2 text-muted d-flex justify-content-between">

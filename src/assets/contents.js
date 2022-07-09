@@ -107,6 +107,34 @@ const blogData = [
         post: {
             text: "lorem ipsum cosmic taxi"
         }
+    },
+    {
+        id: "triolingo",
+        display: true,
+        card: {
+            title: "Hack Cambridge Atlas: Triolingo",
+            img: "ray-tracer.png",
+            text: "exciting stuff",
+            date: new Date(2022, 7, 9),
+            type: "Hackathon"
+        },
+        post: {
+            text: "what fun"
+        }
+    },
+    {
+        id: "404",
+        display: false,
+        card: {
+            title: "Not Found",
+            img: "ray-tracer.png",
+            text: "This post could not be found.",
+            date: new Date(2022, 7, 9),
+            type: "Post"
+        },
+        post: {
+            text: "This post could not be found."
+        }
     }
 ];
 
