@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../styles/socials.css";
 import {
   FaGithub,
   FaTwitter,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { socialprofils } from "../content_option";
 
-export const Socialicons = (params) => {
+export const Socials = (params) => {
   return (
     <div className="stick_follow_icon">
       <ul>
