@@ -90,8 +90,9 @@ const blogData = [
             date: new Date(2022, 7, 9),
             type: "Project"
         },
-        post: {
-            text: "lorem ipsum"
+        body: {
+            text: "lorem ipsum",
+            md: "ray-tracer.md"
         }
     },
     { 
@@ -99,27 +100,29 @@ const blogData = [
         display: true,
         card: {
             title: "Cosmic Taxi",
-            img: "ray-tracer.png",
+            img: "cosmic-taxi.png",
             text: "some more text",
             date: new Date(2022, 7, 9),
             type: "Project",
         },
-        post: {
-            text: "lorem ipsum cosmic taxi"
+        body: {
+            text: "lorem ipsum cosmic taxi",
+            md: "ray-tracer.md"
         }
     },
     {
         id: "triolingo",
         display: true,
         card: {
-            title: "Hack Cambridge Atlas: Triolingo",
+            title: "Triolingo",
             img: "ray-tracer.png",
             text: "exciting stuff",
             date: new Date(2022, 7, 9),
             type: "Hackathon"
         },
-        post: {
-            text: "what fun"
+        body: {
+            text: "what fun",
+            md: "ray-tracer.md"
         }
     },
     {
@@ -132,7 +135,7 @@ const blogData = [
             date: new Date(2022, 7, 9),
             type: "Post"
         },
-        post: {
+        body: {
             text: "This post could not be found."
         }
     }

@@ -6,7 +6,7 @@ import {
 
 const About = () => (
     <Col lg={true} className="article">
-            <h2 className="my-brand">{aboutData.heading}</h2>
+            <h1 className="my-brand">{aboutData.heading}</h1>
             <p>
                {aboutData.body}
             </p>
