@@ -31,7 +31,9 @@ class Article extends Component {
 
           <hr />
 
-          <BlogBody src={post.body.md} />
+          <div className="px-4 pb-4">
+            <BlogBody src={post.body.md} />
+          </div>
         </Col>
       )
     }

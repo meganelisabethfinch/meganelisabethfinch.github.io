@@ -18,9 +18,7 @@ class BlogBody extends Component {
         console.log(this.props.source);
         const { markdown } = this.state;
         return (
-            <div className="px-4 pb-4">
-                <ReactMarkdown source={markdown} />
-            </div>
+            <ReactMarkdown source={markdown} />        
         );
     }
 }
