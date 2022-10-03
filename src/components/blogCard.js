@@ -9,7 +9,7 @@ const BlogCard = (props) => (
         <Card className="blogCard card border-0">
         <Link className="unstyled-link" to={{pathname: `/blog/${props.link}` }}>
 
-            <Card.Img className="blogCardImg" variant="top" src={require(`../assets/images/${props.img}`)} />
+            <Card.Img className="blogCardImg" variant="top" src={require(`../../public/assets/images/${props.img}`)} />
             <Card.Body>
                 <Card.Title><b>{props.title}</b></Card.Title>
                 
