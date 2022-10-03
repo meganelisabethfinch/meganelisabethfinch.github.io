@@ -1,5 +1,7 @@
 A simple ray tracer written in Java for tick 1 of the Part IA Introduction to Graphics course. The program renders a 2D image of a 3D scene specified in a `.xml` file.
 
+<img src="/test.png" alt="Text" style="width:70%;padding-bottom: 20px;">
+
 #### Task
 
 For this task, we were given skeleton code to work with. I implemented the following:
@@ -10,3 +12,4 @@ For this task, we were given skeleton code to work with. I implemented the follo
 * Recursive ray tracing for reflective surfaces in `Renderer.trace(...)`
 
 #### Solution
+

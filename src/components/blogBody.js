@@ -18,7 +18,7 @@ class BlogBody extends Component {
         console.log(this.props.source);
         const { markdown } = this.state;
         return (
-            <ReactMarkdown source={markdown} />        
+            <ReactMarkdown escapeHtml={false} source={markdown} />        
         );
     }
 }
