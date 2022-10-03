@@ -7,6 +7,8 @@ import {
   blogData
 } from '../assets/contents';
 
+import '../styles/article.css';
+
 class Article extends Component {
 
     render() {
