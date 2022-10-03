@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import BlogBody from '../components/blogBody';
 
@@ -13,10 +13,6 @@ const About = () => (
             <div>
                 <BlogBody src="intro.md" />
             </div>
-            <p>
-                <h4>Contact</h4>
-                Email: <a href={"mailto:" + aboutData.contacts.email}>{aboutData.contacts.email}</a>
-            </p>
     </Col>
 );
 

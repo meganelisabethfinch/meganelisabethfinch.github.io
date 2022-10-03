@@ -1,6 +1,6 @@
 A simple ray tracer written in Java for tick 1 of the Part IA Introduction to Graphics course. The program renders a 2D image of a 3D scene specified in a `.xml` file.
 
-<img src="/test.png" alt="Text" style="width:70%;padding-bottom: 20px;">
+<img src="/assets/embeds/test.png" alt="Text" style="width:70%;padding-bottom: 20px;">
 
 #### Task
 

@@ -23,6 +23,6 @@ During this stage, we found that GPT-3 was able to generate natural responses, b
 ##### Links
 
 If you'd like to learn more about Triolingo, please check out
-- *Triolingo*, hosted by Block Four
-- Our Devpost submission
-- A write-up by Deepgram
+- *[Triolingo](https://triolingo.blockfour.co.uk)*, hosted by Block Four
+- Our [Devpost](https://devpost.com/software/triolingo-rpc4n0) submission
+- A [blog post about *Triolingo*](https://blog.deepgram.com/foreign-language-practice-triolingo/) by Deepgram

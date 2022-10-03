@@ -2,4 +2,4 @@ This is my third-year dissertation project for the Computer Science Tripos at th
 
 #### Links
 - Dissertation
-- GitHub repository
+- [GitHub repository](https://github.com/meganelisabethfinch/StructureFromMotion)

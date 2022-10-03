@@ -46,7 +46,7 @@ const blogData = [
         }
     },
     {
-        id: "genetic-music-generation",
+        id: "genetic-music",
         display: true,
         card: {
             title: "Genetic Music Generation in Java",
@@ -57,12 +57,12 @@ const blogData = [
         },
         body: {
             images: [],
-            md: "ray-tracer.md"
+            md: "genetic-music.md"
         }
     },
     {
         id: "ray-tracer",
-        display: true,
+        display: false,
         card: {
             title: "Ray Tracer",
             img: "ray-tracer.png",
@@ -77,7 +77,7 @@ const blogData = [
     },
     { 
         id: "cosmic-taxi",
-        display: true,
+        display: false,
         card: {
             title: "Cosmic Taxi",
             img: "cosmic-taxi.png",
