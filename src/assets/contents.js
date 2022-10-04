@@ -34,8 +34,8 @@ const blogData = [
         id: "structure-from-motion",
         display: true,
         card: {
-            title: "Structure from Motion",
-            img: "ray-tracer.png",
+            title: "Inferring Structure from Motion",
+            img: "sfm-thumb.png",
             text: "Third year dissertation project for the University of Cambridge.",
             date: new Date(2022, 6, 9),
             type: "Dissertation"
