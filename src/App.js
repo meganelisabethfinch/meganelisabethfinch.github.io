@@ -7,7 +7,7 @@ import './styles/app.css';
 import Header from './components/header';
 
 /* Routing imports */
-import { Switch, Route, BrowserRouter, useLocation, withRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter, useLocation, withRouter } from 'react-router-dom';
 
 const Home = lazy(() => import ('./pages/home'));
 const About = lazy(() => import ('./pages/about'));
@@ -17,7 +17,7 @@ const Blog = lazy(() => import ('./pages/blog'));
 function App() {
   return (
     <Container fluid className="bg-colour bg-splash">
-      <BrowserRouter>
+      <HashRouter>
       <Header/>
       <Row className="bg-colour" style={{ paddingTop: '65px' }}>
         <Suspense fallback={<p>Loading...</p>}>
@@ -29,7 +29,7 @@ function App() {
         </Switch>
         </Suspense>
       </Row>
-      </BrowserRouter>
+      </HashRouter>
     </Container>
   );
 }
