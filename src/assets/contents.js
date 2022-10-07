@@ -35,7 +35,7 @@ const blogData = [
         display: true,
         card: {
             title: "Inferring Structure from Motion",
-            img: "sfm-thumb.png",
+            img: "structure-from-motion-thumb.png",
             text: "Third year dissertation project for the University of Cambridge.",
             date: new Date(2022, 6, 9),
             type: "Dissertation"
@@ -47,7 +47,7 @@ const blogData = [
     },
     {
         id: "genetic-music",
-        display: true,
+        display: false,
         card: {
             title: "Genetic Music Generation in Java",
             img: "ray-tracer.png",
