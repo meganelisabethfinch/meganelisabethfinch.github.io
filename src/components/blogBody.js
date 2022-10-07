@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
+import MarkdownRender from './markdownRender';
 
 import '../styles/blogBody.css';
 
@@ -17,8 +18,12 @@ class BlogBody extends Component {
     render() {
         console.log(this.props.source);
         const { markdown } = this.state;
+        console.log(markdown)
+
         return (
-            <ReactMarkdown escapeHtml={false} source={markdown} />        
+            <MarkdownRender>
+                {markdown}
+            </MarkdownRender>
         );
     }
 }

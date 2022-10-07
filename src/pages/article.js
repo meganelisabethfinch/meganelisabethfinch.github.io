@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import ReactMarkdown from 'react-markdown';
 import BlogBody from '../components/blogBody';
 
 import {

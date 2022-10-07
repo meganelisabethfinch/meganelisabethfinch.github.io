@@ -7,6 +7,7 @@ The aim of my third-year dissertation project at the University of Cambridge was
 
 #### Triangulation
 
+$$ math test $$
 <img src="/assets/images/sfm/triangulation.png" width="350px"  style="display:block;margin-left:auto;margin-right:auto" />
 
 <img src="/assets/images/sfm/midpoint.png" width="350px"  style="display:block;margin-left:auto;margin-right:auto" />
