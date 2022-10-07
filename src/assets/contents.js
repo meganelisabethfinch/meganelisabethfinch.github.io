@@ -1,17 +1,16 @@
 const logotext = "Megan Elisabeth Finch";
 const meta = {
     title: "Megan Elisabeth Finch",
-    description: "I'm John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    description: "I'm Megan Elisabeth Finch, a computer scientist and aspiring researcher, based in UK and KR.",
 };
 
 const homeData = {
     static: "Hi, I'm Megan.",
     animated: [
         "I write code.",
-        "I make music.",
-        "I have fun."
+        "I make music."
     ],
-    lead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum tur adipiscing elit. Sed at nisl euismod urna bibendum",
+    lead: "MS Student in Culture Technology at the Music and Audio Computing Lab, KAIST.",
     callToAction: {
         text: "Learn more.",
         href: "/about"

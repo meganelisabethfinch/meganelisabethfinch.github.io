@@ -8,6 +8,9 @@ import {
   homeData
 } from '../assets/contents';
 
+/* CSS imports */
+import '../styles/home.css';
+
 class Home extends Component {
     render() {
         return (
@@ -33,11 +36,11 @@ class Home extends Component {
                       }}      
                     />
                </h1>
-               <p class="lead mt-4">
+               <p class="lead text-light mt-4">
                 {homeData.lead}
                </p>
                <p class="lead">
-                <a class="btn btn-primary btn-md" href={homeData.callToAction.href} role="button">{homeData.callToAction.text}</a>
+                <a class="btn btn-outline-light btn-md" href={homeData.callToAction.href} role="button">{homeData.callToAction.text}</a>
                </p>
            </Jumbotron>
         )
