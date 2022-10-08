@@ -1,7 +1,7 @@
 #### 3D Reconstruction
 3D reconstruction is a central problem in computer vision, focused on inferring three-dimensional structures from a collection of two-dimensional images. One popular approach to this problem is to simultaneously infer the camera *motion* (position and orientation) and scene *structure* (as a point cloud), a class of methods known as *Structure from Motion* – or *SfM* for short. 
 
-<img src='%PUBLIC_URL%/assets/images/structure-from-motion/simple-pipeline.png' width="400px;"  style="display:block;margin-left:auto;margin-right:auto;" />
+<img src='assets/images/structure-from-motion/simple-pipeline.png' width="400px;"  style="display:block;margin-left:auto;margin-right:auto;" />
 
 The aim of my third-year dissertation project at the University of Cambridge was therefore to design, implement and evaluate a complete SfM pipeline. I focused on two pipeline stages in particular: triangulation, and bundle adjustment.
 
@@ -10,7 +10,7 @@ ___
 #### Overview
 The focus of this project is incremental Structure from Motion, generally formulated as the eight-stage pipeline shown below.
 
-<img src="/assets/images/structure-from-motion/complex-pipeline.png" width="500px;"  style="display:block;margin-left:auto;margin-right:auto;" />
+<img src="assets/images/structure-from-motion/complex-pipeline.png" width="500px;"  style="display:block;margin-left:auto;margin-right:auto;" />
 
 <br>
 
@@ -56,7 +56,7 @@ ___
 
 Features are matched based only on similarity of appearance descriptors, which means some features are, inevitably, incorrectly matched. This is especially true of images with repetitive features, as shown below. The true match is drawn in green; the false match is drawn in red.
 
-<img src="/assets/images/structure-from-motion/newnham-matches.png" width="450px"  style="display:block;margin-left:auto;margin-right:auto" />
+<img src="assets/images/structure-from-motion/newnham-matches.png" width="450px"  style="display:block;margin-left:auto;margin-right:auto" />
 
 Fortunately, these false feature correspondences can be identified and pruned through the process of geometric verification, which defines a geometric transformation between the images.
 
@@ -84,7 +84,7 @@ Triangulation is the problem of determining the location of a 3D scene point $\b
 
 We first assume knowledge of a $3 \times 4$ extrinsic matrix $[R \mid {\bf t}]$ and a $3 \times 3$ intrinsic matrix $K$ for each camera. These are calculated in the camera calibration and image registration stages, respectively. We hence combine these into a single $3 \times 4$ projection matrix $P = K [R \mid {\bf t}]$.
 
-<img src="/assets/images/structure-from-motion/triangulation.png" width="350px"  style="display:block;margin-left:auto;margin-right:auto" />
+<img src="assets/images/structure-from-motion/triangulation.png" width="350px"  style="display:block;margin-left:auto;margin-right:auto" />
 
 If we assume *exact* knowledge of these camera matrices and measured image points, the solution to the triangulation problem is actually very simple: the triangulated scene point $\bf X$ solves ${\bf x}_1 = P_1 {\bf X}$ and ${\bf x}_2 = P_2 \bf X$ – in other words, $\bf X$ is the point of intersection of the two backprojected rays, as pictured above.
 
@@ -113,5 +113,5 @@ ___
 
 #### Links
 To learn more about my project, please check out
-- [My dissertation](/assets/documents/structure-from-motion/dissertation.pdf)
+- [My dissertation](assets/documents/structure-from-motion/dissertation.pdf)
 - [My GitHub repository](https://github.com/meganelisabethfinch/StructureFromMotion)
