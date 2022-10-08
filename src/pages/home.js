@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 /* React-Bootstrap imports */
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Nav } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect';
+import { Link } from 'react-router-dom';
+
 
 import {
   homeData
@@ -40,7 +42,7 @@ class Home extends Component {
                 {homeData.lead}
                </p>
                <p class="lead">
-                <a class="btn btn-outline-light btn-md" href={homeData.callToAction.href} role="button">{homeData.callToAction.text}</a>
+               <Nav.Link className="btn btn-outline-light btn-md" eventKey="1" as={Link} to="/about">{homeData.callToAction.text}</Nav.Link>
                </p>
            </Jumbotron>
         )

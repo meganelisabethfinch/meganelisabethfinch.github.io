@@ -20,7 +20,7 @@ const About = () => (
             </div>
 
             <div className="col-md-4 justify-center">
-                <img className="my-frame" src="/assets/images/graduation.png" />
+                <img className="my-frame" src={process.env.PUBLIC_URL + '/assets/images/graduation.png'} />
             </div>
 
         </div>
