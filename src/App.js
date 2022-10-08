@@ -17,7 +17,7 @@ const Blog = lazy(() => import ('./pages/blog'));
 function App() {
   return (
     <Container fluid className="bg-colour bg-splash">
-      <HashRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Row className="bg-colour" style={{ paddingTop: '65px' }}>
         <Suspense fallback={<p>Loading...</p>}>
