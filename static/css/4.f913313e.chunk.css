@@ -1,2 +1,0 @@
-.blogCard{width:100%;display:flex;flex-direction:column;overflow:hidden;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s;margin:0 auto}.blogCard:hover{-webkit-transform:scale(1.02);transform:scale(1.02)}.blogCardImg{object-fit:cover}.cards_item{display:flex;padding:1rem}@media (min-width:768px){.cards_item{width:33.3333%}}.cards{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0}
-/*# sourceMappingURL=4.f913313e.chunk.css.map */
