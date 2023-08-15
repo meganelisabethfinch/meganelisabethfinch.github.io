@@ -27,12 +27,6 @@ const About = () => (
                     </p>    
                 </div>
                 <div>
-                    <h4>Teaching</h4>
-                    <ul>
-                        <li><b>Spring 2023.</b> Supervisor, Further Human-Computer Interaction.</li>
-                    </ul>
-                </div>
-                <div>
                     <h4>Contact</h4>
                     <ul>
                     <li>Email: <a href="mailto:mef40@cantab.ac.uk">mef40@cantab.ac.uk</a></li>
