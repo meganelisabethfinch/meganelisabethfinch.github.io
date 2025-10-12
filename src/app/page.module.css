@@ -1,0 +1,404 @@
+.page {
+  --gray-rgb: 0, 0, 0;
+  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+
+  display: grid;
+  place-items: center;
+  /* Make the landing page exactly the viewport height minus the fixed header so it never scrolls */
+  height: calc(100svh - 72px);
+  padding: 32px;
+  gap: 64px;
+  overflow: hidden; /* prevent scrolling on the landing page */
+  font-family: var(--font-geist-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* Center main content within the landing viewport area */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.main ol {
+  font-family: var(--font-geist-mono);
+  padding-left: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  list-style-position: inside;
+}
+
+.main li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.main code {
+  font-family: inherit;
+  background: var(--gray-alpha-100);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.ctas {
+  display: flex;
+  gap: 16px;
+}
+
+.ctas a {
+  appearance: none;
+  border-radius: 128px;
+  height: 48px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+a.primary {
+  background: var(--foreground);
+  color: var(--background);
+  gap: 8px;
+}
+
+a.secondary {
+  border-color: var(--gray-alpha-200);
+  min-width: 158px;
+}
+
+.footer {
+  grid-row-start: 3;
+  display: flex;
+  gap: 24px;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer img {
+  flex-shrink: 0;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px;
+    padding-bottom: 80px;
+  }
+
+  .main {
+    align-items: center;
+  }
+
+  .main ol {
+    text-align: center;
+  }
+
+  .ctas {
+    flex-direction: column;
+  }
+
+  .ctas a {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 16px;
+  }
+
+  a.secondary {
+    min-width: auto;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Styling for the TextType component so it matches header typography */
+
+/* Center the typing component as a block but left-align the text inside it.
+   The component's CSS module controls font-family and color; this rule only
+   manages layout width on larger screens. */
+
+
+@media (max-width: 600px) {
+  .main .text-type {
+    font-size: 22px;
+  }
+}
+
+/* Demo wrapper/container to mimic the example layout (centered block with
+   an inner left-anchored area for the typing animation). */
+.demoWrapper {
+  /* Center the visible demo block while still insetting content on both
+     sides so the typing text has left/right gutters. */
+  width: min(80vw, 1100px);
+  margin: 0 auto;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  box-sizing: border-box;
+}
+
+/* On smaller screens keep the demo centered and remove the left padding
+   so the layout remains usable and doesn't create large side gutters. */
+@media (max-width: 900px) {
+  .demoWrapper {
+    /* On smaller screens restore a centered layout and remove left gutter */
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+  }
+}
+
+/* Ensure the demo content stays left-anchored on narrow viewports */
+@media (max-width: 900px) {
+  .demoWrapper {
+    /* keep a small responsive inset on mobile so text doesn't hug the edges */
+    padding-left: clamp(16px, 6vw, 40px);
+    padding-right: clamp(16px, 6vw, 40px);
+  }
+
+  .demoInner {
+    justify-content: flex-start !important;
+  }
+
+  /* Ensure the main container stretches the full width on narrow viewports
+     so its children (like .demoWrapper) can take the full horizontal space
+     and left-anchor correctly instead of appearing centered. */
+  .main {
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+
+  /* Don't force .demoBlock (the flex column wrapper) to become inline-block.
+     Only non-block/demo wrapper children should use inline-block sizing. */
+  .demoInner > *:not(.demoBlock) {
+    text-align: left !important;
+    margin-left: 0 !important;
+    align-self: flex-start !important;
+    display: inline-block !important;
+    width: auto !important;
+  }
+
+  /* Defensive: ensure the demo container and its children are left-aligned
+     and take up the full available width on small screens. This prevents
+     short single-line typed strings from appearing centered and then
+     shifting left as more characters are added. */
+  .demoInner {
+    text-align: left !important;
+    width: 100% !important;
+  }
+
+  .demoInner .demoBlock {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .demoInner .root {
+    text-align: left !important;
+    width: 100% !important;
+  }
+}
+
+
+.demoInner {
+  position: relative;
+  /* Use flex so the typing child can be left-anchored while the wrapper is centered */
+  padding: 1rem;
+  min-height: 120px; /* allow room for multi-line wrapping */
+  overflow: visible;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+/* Keep the demo's direct child in normal flow so it can wrap inside the
+   horizontal insets created by .demoWrapper. */
+.demoInner > * {
+  position: static;
+  /* keep layout semantics but avoid overriding specific elements like .demoBlock
+     which intentionally use display:flex to stack the CTA below the typing text */
+  width: auto;
+  white-space: normal; /* allow wrapping */
+  align-self: flex-start; /* keep typing anchored to the left edge of the wrapper */
+}
+
+/* ensure the demoBlock stays a column flex container so children (typing + CTA)
+   always appear on separate rows */
+.demoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.subheading {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .subheading {
+    font-size: 0.95rem;
+  }
+}
+
+/* Greeting above the typing effect. Match the typing display (inherit size,
+   heavy weight and italic style) so it visually aligns with the demo text. */
+.greeting {
+  font-family: var(--font-inter);
+  font-weight: 800;
+  font-style: italic;
+  color: #ffffff;
+  line-height: 0.95;
+  font-size: inherit; /* inherit the clamp() size set on .demoInner > * */
+  margin-bottom: 4px;
+}
+
+.researchStatic {
+  font-family: var(--font-inter);
+  font-weight: 800;
+  font-style: italic;
+  color: #ffffff;
+  line-height: 0.95;
+  font-size: inherit;
+  margin-top: 6px;
+}
+
+.researchGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* tighten the gap so the research static line sits close to the typed lines */
+}
+
+.researchGroup .content,
+.researchGroup .root,
+.researchGroup .content span {
+  /* Slightly increased line-height for wrapped lines so vertical spacing
+     between typed lines matches spacing between the static "I'm researching"
+     line and the first typed line. This addresses vertical overlap. */
+  line-height: 1.06;
+}
+
+/* Block containing the typing demo and the CTA; aligns CTA to the typing start */
+.demoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start; /* ensures CTA left edge aligns with text start */
+  width: 100%;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px; /* rectangular with rounded corners */
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400; /* Inter Regular */
+  font-family: var(--font-inter);
+  font-size: 0.875rem; /* smaller button text */
+  line-height: 1;
+  border: 1px solid #ffffff;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background: #ffffff;
+  color: #111111;
+  border-color: #ffffff;
+}
+
+.cta:focus-visible {
+  outline: 3px solid rgba(18,194,233,0.16);
+  outline-offset: 4px;
+}
+
+/* Larger, bolder typography for the landing page typing demo */
+.demoInner > * {
+  color: #ffffff; /* ensure visible on the page background */
+  line-height: 0.95;
+  /* scale responsively but biased to large display sizes */
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.demoInner > * {
+  color: #ffffff;
+  line-height: 0.95;
+}
+
+/* Explicit class to ensure the typing demo uses Inter regardless of parent
+   font settings (higher specificity via !important). */
+.demoType {
+  font-family: var(--font-inter) !important;
+  font-weight: 700 !important;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}

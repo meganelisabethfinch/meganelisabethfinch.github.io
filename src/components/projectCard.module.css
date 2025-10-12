@@ -1,0 +1,176 @@
+.card {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(12,12,12,0.08);
+  height: 100%; /* allow card to stretch to match siblings */
+  min-height: 320px; /* consistent visual card height on desktop */
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  transform-origin: center top;
+  will-change: transform;
+}
+
+/* Make the inner article fill the card so children flex (media + body) layout
+   can reliably push the bottomArea to the card bottom. */
+.card > article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.glareWrap {
+  display: block; /* ensure wrapper fills link area */
+  position: relative;
+  z-index: 0;
+}
+
+.media {
+  /* top half image area */
+  width: 100%;
+  /* thumbnails are produced at 640x480 (4:3). Use that aspect ratio so
+     the card shows thumbnails at the intended proportion. If the provided
+     image has a different ratio, object-fit:cover will crop to this box. */
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop as needed */
+  object-position: center;
+  display: block;
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1 1 auto;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0 0 4px 0;
+  color: #111;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.metaRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 6px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.metaItem {
+  color: #666;
+}
+
+.metaSep {
+  color: #ccc;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #7a7a7a;
+  margin-top: 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+/* Container that holds CTA and tags and gets pushed to the bottom of the card body */
+.bottomArea {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.actionsRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tagsRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px; /* sit slightly below the CTA */
+  flex-wrap: wrap;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  /* use the shared site gradient for the CTA pill to match the header/body gradient */
+  background: var(--site-gradient);
+  color: #fff;
+  padding: 6px 10px; /* smaller pill */
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animate gradient while hovered or keyboard-focused */
+@media (prefers-reduced-motion: no-preference) {
+  .cta:hover,
+  .cta:focus-visible {
+    animation: gradientShift 3s linear infinite;
+    /* no transform or box-shadow on hover: keep position stable while gradient animates */
+  }
+}
+
+.cta svg {
+  width: 12px;
+  height: 12px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #f0f0f0;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* Slight enlarge on hover (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 14px 40px rgba(12,12,12,0.12);
+    z-index: 2; /* bring above neighbors during hover */
+  }
+}

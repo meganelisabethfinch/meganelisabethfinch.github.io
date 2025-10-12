@@ -1,0 +1,50 @@
+/* Copied from the original projects page styles to power the new /blog listing */
+.pageWrap {
+  min-height: calc(100svh - 72px);
+  padding: 24px;
+  color: #fff;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding-inline: 37px; /* match highlighted row gutters */
+  box-sizing: border-box;
+}
+
+.section h2 {
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.allGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.allGrid > * {
+  display: flex;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .allGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .section { padding-inline: 24px }
+}
+
+@media (max-width: 600px) {
+  .section { padding-inline: 12px }
+}
+
+@media (max-width: 600px) {
+  .allGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

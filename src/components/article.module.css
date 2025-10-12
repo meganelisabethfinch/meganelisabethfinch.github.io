@@ -1,0 +1,90 @@
+.articleWrapper {
+  /* Use min-height so the white area extends to the bottom but can grow with content.
+     Use 100vh to avoid small-viewport (svh) clipping that can show the body gradient at the bottom. */
+  min-height: calc(100vh - 72px);
+  background: #ffffff; /* full-bleed white area under the header */
+  padding: 0 24px 24px 24px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  color: #111;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  padding: 40px 0 0 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.content {
+  background: transparent; /* content sits on the white wrapper */
+  padding-bottom: 40px;
+}
+
+/* Ensure headings inside article content use Inter Bold for h4 */
+.content h4 {
+  font-family: var(--font-inter, Inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 700;
+}
+
+/* h6 should also be bold on article pages */
+.content h6 {
+  font-family: var(--font-inter, Inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 700;
+}
+
+/* Link styling for article content (scoped) */
+.content a {
+  color: var(--link-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: color 160ms ease, opacity 160ms ease;
+}
+
+.content a:hover {
+  color: var(--accent-3);
+}
+
+.content a:focus-visible {
+  outline: 3px solid rgba(18,194,233,0.18);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Space out sections (assumes each section is wrapped in a div) */
+.content > div {
+  margin-bottom: 32px;
+}
+
+.metaRow {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.metaItem {
+  color: #666;
+}
+
+.metaSep {
+  color: #bbb;
+}

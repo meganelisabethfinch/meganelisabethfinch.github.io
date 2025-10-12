@@ -1,0 +1,42 @@
+<p>
+<i>Triolingo</i> was my team's entry for the 2022 Hack Cambridge Atlas hackathon. Made in just 24 hours, Triolingo was our response to a sponsored challenge by <a href="https://deepgram.com/">Deepgram</a>, who challenged hackers to create something cool using their speech recognition API.
+</p>
+
+<h4>Motivation</h4>
+<hr />
+<p>
+When looking through the Deepgram docs, we saw that the API supported several foreign languages, and were inspired to create an online foreign language learning platform focused on live conversation practice.
+</p>
+
+<h4>What It Does</h4>
+<hr />
+<p>
+Triolingo is a live chat bot capable of conversing in several languages: English, French and Spanish. The chat bot starts the conversation off with a few prompts about a user-selected topic, and users record their responses using Deepgram's speech recognition API. From there, no two chats are the same, as the GPT-3 natural language processing API is used to process the user's response and produce an answer, which is read aloud using Google's text-to-speech API.
+</p>
+
+<h4>How We Built It</h4>
+<hr />
+<p>
+Our initial sketch for Triolingo naturally reduced to four tasks, one for each team member:
+
+<ul>
+    <li>Transcribing the user's answer via Deepgram's speech recognition API.</li>
+    <li>A web front-end that allows users to select conversation topics and target language, and displays the transcript of the conversation.</li>
+    <li>The GPT-3 chat API, which takes as input a conversation topic and the text transcribed by the Deepgram API.</li>
+    <li>Reading out the response with Google's text-to-speech API.</li>
+</ul>
+
+We started by implementing the chat bot in English (so that we could test the viability of the chat bot AI) before adding support for French and Spanish (which were spoken by a member of our team).
+
+During this stage, we found that GPT-3 was able to generate natural responses, but didn't always ask a question, so it wasn't always obvious how the user should respond. To keep the conversation flowing, we had our chat bot toggle between a question and answer mode based on the user's input.
+</p>
+
+<h4>Links</h4>
+<hr />
+<p>
+    To find out more, check out:
+    <ul>
+        <li>Our <a href="https://devpost.com/software/triolingo-rpc4n0">Devpost</a> submission</li>
+        <li>A <a href="https://deepgram.com/learn/foreign-language-practice-triolingo">blog post</a> by Deepgram about our project</li>
+    </ul>
+</p>
