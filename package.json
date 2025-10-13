@@ -1,13 +1,12 @@
 {
-  "name": "megan-elisabeth-finch-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://meganelisabethfinch.github.io/",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out -b main",
     "start": "next start"
   },
   "dependencies": {

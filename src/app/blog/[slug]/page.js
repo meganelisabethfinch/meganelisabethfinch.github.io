@@ -3,6 +3,14 @@ import projects from "../../../data/projects";
 import fs from 'fs';
 import path from 'path';
 
+// Ensure all blog slugs are generated at build time so `output: 'export'` can
+// produce static pages for each post.
+export async function generateStaticParams() {
+  return projects
+    .filter((p) => !p.hidden)
+    .map((p) => ({ slug: p.slug }));
+}
+
 export default async function BlogPost({ params }) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
