@@ -1,0 +1,194 @@
+1:"$Sreact.fragment"
+2:I[78933,["/_next/static/chunks/ec7532f61a20f1f6.js","/_next/static/chunks/37126414dcf2a2bb.js","/_next/static/chunks/902ac23d77e07371.js"],"default"]
+3:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"default"]
+4:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"default"]
+6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"OutletBoundary"]
+8:I[11533,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"AsyncMetadataOutlet"]
+a:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"ViewportBoundary"]
+c:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"MetadataBoundary"]
+e:I[68027,["/_next/static/chunks/ec7532f61a20f1f6.js","/_next/static/chunks/37126414dcf2a2bb.js","/_next/static/chunks/902ac23d77e07371.js"],"default"]
+:HL["/_next/static/chunks/196af3eb84ac0212.css","style"]
+:HL["/_next/static/chunks/a87916f933b8012c.css","style"]
+:HL["/_next/static/chunks/093f08acef0ccde9.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/f67ad414ed34149c-s.p.84166d94.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/daac4f4bc02fb781.css","style"]
+0:{"P":null,"b":"AcmsDYhkK9Fr6Rq7nw_jK","p":"","c":["","blog","structure-from-motion",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","structure-from-motion","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/196af3eb84ac0212.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/a87916f933b8012c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/093f08acef0ccde9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/ec7532f61a20f1f6.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/37126414dcf2a2bb.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/902ac23d77e07371.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__variable inter_ca07bccc-module__to7BNG__variable","children":[["$","head",null,{"children":[["$","title",null,{"children":"Megan Elisabeth Finch"}],["$","meta",null,{"name":"description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","meta",null,{"property":"og:title","content":"Megan Elisabeth Finch"}],["$","meta",null,{"property":"og:description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","meta",null,{"name":"twitter:title","content":"Megan Elisabeth Finch"}],["$","meta",null,{"name":"twitter:description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"}],["$","script",null,{"defer":true,"src":"https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"}],["$","script",null,{"defer":true,"src":"https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"fixed-header site-header-spacer","children":["$","$L2",null,{}]}],["$","div",null,{"className":"site-header-spacer","aria-hidden":true}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","structure-from-motion","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/daac4f4bc02fb781.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/435f6870d6ed76bd.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":"$Ld"}]}]]}],false]],"m":"$undefined","G":["$e",["$Lf","$L10","$L11"]],"s":false,"S":true}
+12:"$Sreact.suspense"
+d:["$","$12",null,{"fallback":null,"children":"$L13"}]
+f:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/196af3eb84ac0212.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+10:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/a87916f933b8012c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+11:["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/093f08acef0ccde9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+14:T315e,
+<div>
+  <p>
+    <b>3D reconstruction</b> is a central problem in computer vision, focused on inferring three-dimensional structures from a collection of two-dimensional images. One popular approach to this problem is to simultaneously infer the camera <b><i>motion</i></b> (position and orientation) and scene <b><i>structure</i></b> (as a point cloud), a class of methods known as <b>Structure from Motion</b>—or SfM for short.
+  </p>
+
+  <p>
+    For my third year dissertation project at the University of Cambridge, I implemented and evaluated a complete SfM pipeline, focusing on how alternate approaches to two stages in particular—<b><i>triangulation</i></b> and <b><i>bundle adjustment</i></b>—affected the reconstruction accuracy.
+  </p>
+
+  <div style="display:flex;justify-content:center;margin:24px 0;">
+    <img src="/assets/images/structure-from-motion/simple-pipeline.png" alt="Simple SfM pipeline" style="max-width:500px;width:100%;height:auto;display:block;" />
+  </div>
+</div>
+
+<div>
+<h4>What is Structure from Motion?</h4>
+<hr />
+<p>
+  Structure from Motion consists of several stages, as outlined below:
+  <ol>
+    <li>[Optional] <b>Camera Calibration</b> — accounts for camera-specific parameters such as focal length and optical centre.</li>
+    <li><b>Feature Extraction</b> — identifies distinctive features, or <b><i>'key points'</i></b>, in each image.</li>
+    <li><b>Feature Matching</b> — identifies occurrences of the same feature in different images.</li>
+    <li><b>Geometric Verification</b> — prunes geometrically implausible feature matches.</li>
+    <li><b>Image Registration</b> — estimates the pose of the camera at the moment it captured a given image.</li>
+    <li><b>Triangulation</b> — calculates the 3D position of a key point in the scene based on its position in multiple images.</li>
+    <li>[Optional] <b>Bundle Adjustment</b> — jointly refines all camera poses and 3D scene points estimated thus far.</li>
+    <li>[Optional] <b>Filtering</b> — removes outlier scene points.</li>
+  </ol>
+</p>
+<div style="display:flex;justify-content:center;margin:24px 0;">
+    <img src="/assets/images/structure-from-motion/complex-pipeline.png" alt="Detailed SfM pipeline" style="max-width:700px;width:100%;height:auto;display:block;" />
+  </div>
+</div>
+
+<div>
+  <h4>Calibrating the Camera</h4>
+  <hr />
+  <p>
+    The mathematical operation underpinning photography is a projection: we take a 3D scene, which contains some <b><i>scene points</i></b> $\mathbf{X}$, and, by projecting these points onto a plane, obtain some 2D image points $\mathbf{x}$:
+    $$\mathbf{\hat{x}} = K\begin{bmatrix} R & \mathbf{t} \end{bmatrix}\mathbf{X}$$
+    What Structure from Motion aims to estimate is essentially the reverse transform that maps 2D image points back to their original 3D scene points. For a single image, this is infeasible due to loss of depth information in the projection; however, by identifying common points across multiple images, we can infer not only the positions of the 3D scene points but also the positions of the cameras themselves.
+  </p>
+  <p>
+    Camera calibration is the process of estimating a camera's so-called <b><i>intrinsic</i></b> parameters; these are camera-specific measurements such as its optical centre and focal length, which can lead to distortion in the captured images.
+  </p>
+  <p>
+    The intrinsic parameters are represented by $K$:
+    $$K = \begin{bmatrix}f_x & s & c_x \\ 0 & f_y & c_y \\ 0 & 0 & 1\end{bmatrix}$$
+    in which $(c_x, c_y)$ is the optical centre, $(f_x, f_y)$ is the focal length, and $s$ is the skew coefficient. These parameters can be estimated by taking multiple photographs of a known calibration image (a chess board, for instance) with the same camera.
+  </p>
+</div>
+
+<div>
+  <h4>Extracting Features</h4>
+  <hr />
+  <p>
+    Feature extraction finds, for each input image $I_i$ (where $i = 1, \dots, N_I$), a set $\mathcal{F}_i = \{  (\mathbf{x}_j, \mathbf{f}_j) \mid j = 1, \dots, N_{F_i} \}$ of distinctive visual features in that image. Here, $\mathbf{x}_j$ is the <b><i>key point</i></b>—that is, the feature's location in the image coordinate space—while $\mathbf{f}_j$ is a <b><i>descriptor</i></b> of the feature's appearance.
+  </p>
+  <p>
+    These key points can be used to identify alignments between images - for example, if a pair of images show the same scene from two different angles. We will do this by searching for similar feature descriptors across images; an 'ideal' feature descriptor is therefore one that is invariant to scale, orientation, and lighting conditions. One feature descriptor that satisfies these criteria is the <b><i>Scale-Invariant Feature Transform (SIFT)</i></b>, which is the one I used in this project.
+  </p>
+</div>
+
+<div>
+  <h4>Finding Feature Matches</h4>
+  <hr />
+  <p>
+    Feature matching finds a matching between two sets of features $\mathcal{F}_i$ and $\mathcal{F}_j$ by comparing feature descriptors. The brute force approach would be to perform this search on each pair of images $(I_i, I_j)$, such that $i < j$, with a total time complexity of $O(N_I^2 N_{F_i}^2)$. The output of this stage is an $N_I \times N_I$ matrix of feature matches $\mathcal{M}$, in which each entry $\mathcal{M}_{ab} \in \mathcal{F}_a \times \mathcal{F}_b$ represents the matches between images $I_a$ and $I_b$.
+  </p>
+  <p>
+    $\mathcal{M}_{ab}$ is a solution to what is called the <b><i>correspondence problem</i></b>, meaning it represents a set of points in one image and their corresponding points in another image; each such pair of 2D image points in this set can be used to reconstruct a single 3D scene point.
+  </p>
+</div>
+
+<div>
+  <h4>Verifying Geometric Consistency</h4>
+  <hr />
+  <p>
+    Features are matched based only on similarity of appearance descriptors, which tends to yield some false positives. This is particularly problematic when images contain repetitive features, as shown below; two points in the left image correspond to a single point in the right image, because they all have a similar appearance.
+  </p>
+  <figure style="display:flex;flex-direction:column;align-items:center;justify-content:center;margin:24px 0;">
+    <img src="/assets/images/structure-from-motion/newnham-matches.png" alt="Example of a false feature match" style="max-width:600px;width:100%;height:auto;display:block;" />
+    <figcaption style="margin-top:8px;font-size:13px;color:#666;max-width:600px;text-align:center;">Example of a false feature match: the true match is drawn in green, and the false match in red.</figcaption>
+  </figure>
+
+  <p>
+    Fortunately, these false feature matches can be identified and pruned through a process called <b><i>geometric verification</i></b>, which defines a geometric transformtion between the images.
+  </p>
+  <p>
+    Specifically, for uncalibrated cameras $I$ and $I'$, we wish to find the <b>fundamental matrix</b> $F$ which satisfies the constraint $\mathbf{x'}^\top F \mathbf{x} = 0$, for all pairs of corresponding keypoints $(\mathbf{x}, \mathbf{x'})$, expressed in homogeneous image coordinates.
+  </p>
+  <p>
+    Alternatively, for calibrated cameras (for which the intrinsic matrix $K$ is known), we estimate the <b>essential matrix</b> $E = (K')^\top F K$, which satisfies $\mathbf{y'}^\top E \mathbf{y} = 0$, for all pairs of corresponding keypoints $(\mathbf{y}, \mathbf{y'})$, expressed in homogeneous, normalised image coordinates.
+  </p>
+  <p>
+    In either case, this boils down to applying the <b><i>epipolar constraint</i></b>: for any point $\mathbf{x}$ in the first image, its match $\mathbf{x'}$ in the second image is constrained to lie on the <b>epipolar line</b>, $\mathbf{l'} = F \mathbf{x}$—and vice versa. A feature correspondence that satisfies this condition (within some margin of error) is considered geometrically plausible; other feature correspondences are discarded.
+  </p>
+</div>
+
+<div>
+  <h4>Image Registration</h4>
+  <hr />
+  <p>
+    <b><i>Image registration</i></b> is the process of estimating the pose of the camera at the moment it captured a particular image. The pose is represented as a $3 \times 4$ matrix $[R \mid \mathbf{t}]$ (called the <b>extrinsic matrix</b>), where $R$ and $\mathbf{t}$ are the camera's rotation and translation, respectively.
+  </p>
+  <p>
+    On the first iteration, the scene reconstruction is initialised by registering a <i>pair</i> of cameras simultaneously. The positions of these cameras (relative to each other) is derived from their keypoint correspondences, a relationship represented via the essential matrix $E$.
+  </p>
+  <p>
+    Subsequent cameras are registered one at a time using feature matches between the new image and images that have already been 'registered' within the reconstruction; this is known as the <b><i>Perspective-n-Point (PnP)</i></b> problem.
+  </p>
+</div>
+
+<div>
+  <h4>Triangulation</h4>
+  <hr />
+  <p>
+    <b><i>Triangulation</i></b> is the process of determining the location of a 3D scene point $\mathbf{X}$ from its measured image points $\mathbf{x}$ in more than one image. The scope of this project was limited to <b>two-view triangulation methods</b>—that is, those that consider a pair of image points $(\mathbf{x}_1, \mathbf{x}_2)$ from two different camera views.
+  </p>
+  <p>
+    To triangulate a scene point, we first assume knowledge of the $3 \times 4$ extrinsic matrix $[R \mid \mathbf{t}]$ and the $3 \times 3$ intrinsic matrix $K$ for each camera, calculated in the camera calibration and image registration stages, respectively. We then combine these into a single $3 \times 4$ projection matrix $P = K [R \mid \mathbf{t}]$.
+  </p>
+  <figure style="display:flex;flex-direction:column;align-items:center;justify-content:center;margin:24px 0;">
+    <img src="/assets/images/structure-from-motion/triangulation.png" alt="Triangulation Diagram" style="max-width:350px;width:100%;height:auto;display:block;" />
+    <figcaption style="margin-top:8px;font-size:13px;color:#666;max-width:350px;text-align:center;">Triangulation: the 3D scene point is located at the intersection of back-projected rays from two camera views.</figcaption>
+  </figure>
+  
+  <p>
+    If we assume <i>exact</i> knowledge of these camera matrices and measured image points, the solution to the triangulation problem is trivial: the triangulated scene point $\mathbf{X}$ solves $\mathbf{x}_1 = P_1 \mathbf{X}$ and $\mathbf{x}_2 = P_2 \mathbf{X}$; in other words, $\mathbf{X}$ is the point of intersection of the two backprojected rays, as pictured above.
+  </p>
+  <p>
+    However, such an assumption is unrealistic. In practice, these backprojected rays are almost always skew. The problem is to therefore find a scene point that 'best fits' the measured image points. There are many ways to do this, but, for my project, I implemented and compared two triangulation methods: <b><i>midpoint triangulation</i></b> and <b><i>linear triangulation</i></b>.
+  </p>
+</div>
+
+<div>
+  <h4>Bundle Adjustment</h4>
+  <hr />
+  <p>
+    The next step of the pipeline is <b><i>bundle adjustment</i></b> (BA). BA refers to the joint refinement of all camera poses and scene points estimated thus far; these are esimated separately in the image registration and triangulation stages, but are closely correlated. Uncertainties in triangulation therefore propagate to the next camera pose estimation, and vice versa. This error accumulates over several iterations and can cause the reconstruction to 'drift' to a non-recoverable state. 
+  </p>
+  <p>
+    Bundle adjustment aims to reduce this <b><i>scene drift</i></b> by leveraging the redundancy provided by additional camera poses and scene points calculated in later iterations to refine earlier estimates.
+  </p>
+  <p>
+    The typical approach is to minimise a cost function that incorporates camera poses and scene points spanning several iterations. In this project, I implemented a cost function that measured the <b>total reprojection error</b>, and used Ceres Solver to minimise this function. 
+  </p>
+</div>
+
+<div>
+  <p>
+    Our reconstruction may contain some outlier scene points; these can be removed by filtering. In particular, I implemented <b>statistical outlier filtering</b> (which removes points whose average distance to their nearest neighbours exceeds a particular threshold) and <b>radial outlier filtering</b> (which removes points with too few neighbours within a given radius).
+  </p>
+</div>
+
+<h4>Links</h4>
+<hr />
+<p>
+  To find out more, check out:
+  <ul>
+    <li>The <a href="https://github.com/meganelisabethfinch/StructureFromMotion">GitHub repository</a> for the project</li>
+</p>5:["$","div",null,{"className":"article-module__Tnqyaa__articleWrapper","children":["$","main",null,{"className":"article-module__Tnqyaa__container","children":[["$","header",null,{"className":"article-module__Tnqyaa__header","children":[["$","h1",null,{"className":"article-module__Tnqyaa__title","children":"Inferring Structure from Motion"}],["$","div",null,{"className":"article-module__Tnqyaa__metaRow","children":[["$","span",null,{"className":"article-module__Tnqyaa__metaItem","children":"Dissertation"}],["$","span",null,{"className":"article-module__Tnqyaa__metaSep","children":"•"}],["$","span",null,{"className":"article-module__Tnqyaa__metaItem","children":"09 Jul 2022"}]]}]]}],["$","section",null,{"id":"article-content","className":"article-module__Tnqyaa__content","dangerouslySetInnerHTML":{"__html":"$14"}}],"$L15"]}]}]
+16:I[39960,["/_next/static/chunks/ec7532f61a20f1f6.js","/_next/static/chunks/37126414dcf2a2bb.js","/_next/static/chunks/902ac23d77e07371.js","/_next/static/chunks/435f6870d6ed76bd.js"],"default"]
+15:["$","$L16",null,{"targetId":"article-content"}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:null
+17:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"IconMark"]
+9:{"metadata":[["$","title","0",{"children":"Megan Elisabeth Finch"}],["$","meta","1",{"name":"description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L17","3",{}]],"error":null,"digest":"$undefined"}
+13:"$9:metadata"

@@ -1,0 +1,70 @@
+1:"$Sreact.fragment"
+2:I[78933,["/_next/static/chunks/ec7532f61a20f1f6.js","/_next/static/chunks/37126414dcf2a2bb.js","/_next/static/chunks/902ac23d77e07371.js"],"default"]
+3:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"default"]
+4:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"default"]
+6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"OutletBoundary"]
+8:I[11533,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"AsyncMetadataOutlet"]
+a:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"ViewportBoundary"]
+c:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"MetadataBoundary"]
+d:"$Sreact.suspense"
+f:I[68027,["/_next/static/chunks/ec7532f61a20f1f6.js","/_next/static/chunks/37126414dcf2a2bb.js","/_next/static/chunks/902ac23d77e07371.js"],"default"]
+:HL["/_next/static/chunks/196af3eb84ac0212.css","style"]
+:HL["/_next/static/chunks/a87916f933b8012c.css","style"]
+:HL["/_next/static/chunks/093f08acef0ccde9.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/f67ad414ed34149c-s.p.84166d94.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/daac4f4bc02fb781.css","style"]
+0:{"P":null,"b":"AcmsDYhkK9Fr6Rq7nw_jK","p":"","c":["","blog","triolingo",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","triolingo","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/196af3eb84ac0212.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/a87916f933b8012c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/093f08acef0ccde9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/ec7532f61a20f1f6.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/37126414dcf2a2bb.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/902ac23d77e07371.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__variable inter_ca07bccc-module__to7BNG__variable","children":[["$","head",null,{"children":[["$","title",null,{"children":"Megan Elisabeth Finch"}],["$","meta",null,{"name":"description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","meta",null,{"property":"og:title","content":"Megan Elisabeth Finch"}],["$","meta",null,{"property":"og:description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","meta",null,{"name":"twitter:title","content":"Megan Elisabeth Finch"}],["$","meta",null,{"name":"twitter:description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"}],["$","script",null,{"defer":true,"src":"https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"}],["$","script",null,{"defer":true,"src":"https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"fixed-header site-header-spacer","children":["$","$L2",null,{}]}],["$","div",null,{"className":"site-header-spacer","aria-hidden":true}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","triolingo","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/daac4f4bc02fb781.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/435f6870d6ed76bd.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",["$L10","$L11","$L12"]],"s":false,"S":true}
+10:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/196af3eb84ac0212.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+11:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/a87916f933b8012c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+12:["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/093f08acef0ccde9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+14:I[39960,["/_next/static/chunks/ec7532f61a20f1f6.js","/_next/static/chunks/37126414dcf2a2bb.js","/_next/static/chunks/902ac23d77e07371.js","/_next/static/chunks/435f6870d6ed76bd.js"],"default"]
+13:T97f,<p>
+<i>Triolingo</i> was my team's entry for the 2022 Hack Cambridge Atlas hackathon. Made in just 24 hours, Triolingo was our response to a sponsored challenge by <a href="https://deepgram.com/">Deepgram</a>, who challenged hackers to create something cool using their speech recognition API.
+</p>
+
+<h4>Motivation</h4>
+<hr />
+<p>
+When looking through the Deepgram docs, we saw that the API supported several foreign languages, and were inspired to create an online foreign language learning platform focused on live conversation practice.
+</p>
+
+<h4>What It Does</h4>
+<hr />
+<p>
+Triolingo is a live chat bot capable of conversing in several languages: English, French and Spanish. The chat bot starts the conversation off with a few prompts about a user-selected topic, and users record their responses using Deepgram's speech recognition API. From there, no two chats are the same, as the GPT-3 natural language processing API is used to process the user's response and produce an answer, which is read aloud using Google's text-to-speech API.
+</p>
+
+<h4>How We Built It</h4>
+<hr />
+<p>
+Our initial sketch for Triolingo naturally reduced to four tasks, one for each team member:
+
+<ul>
+    <li>Transcribing the user's answer via Deepgram's speech recognition API.</li>
+    <li>A web front-end that allows users to select conversation topics and target language, and displays the transcript of the conversation.</li>
+    <li>The GPT-3 chat API, which takes as input a conversation topic and the text transcribed by the Deepgram API.</li>
+    <li>Reading out the response with Google's text-to-speech API.</li>
+</ul>
+
+We started by implementing the chat bot in English (so that we could test the viability of the chat bot AI) before adding support for French and Spanish (which were spoken by a member of our team).
+
+During this stage, we found that GPT-3 was able to generate natural responses, but didn't always ask a question, so it wasn't always obvious how the user should respond. To keep the conversation flowing, we had our chat bot toggle between a question and answer mode based on the user's input.
+</p>
+
+<h4>Links</h4>
+<hr />
+<p>
+    To find out more, check out:
+    <ul>
+        <li>Our <a href="https://devpost.com/software/triolingo-rpc4n0">Devpost</a> submission</li>
+        <li>A <a href="https://deepgram.com/learn/foreign-language-practice-triolingo">blog post</a> by Deepgram about our project</li>
+    </ul>
+</p>5:["$","div",null,{"className":"article-module__Tnqyaa__articleWrapper","children":["$","main",null,{"className":"article-module__Tnqyaa__container","children":[["$","header",null,{"className":"article-module__Tnqyaa__header","children":[["$","h1",null,{"className":"article-module__Tnqyaa__title","children":"Triolingo"}],["$","div",null,{"className":"article-module__Tnqyaa__metaRow","children":[["$","span",null,{"className":"article-module__Tnqyaa__metaItem","children":"Hackathon"}],["$","span",null,{"className":"article-module__Tnqyaa__metaSep","children":"•"}],["$","span",null,{"className":"article-module__Tnqyaa__metaItem","children":"09 Jul 2022"}]]}]]}],["$","section",null,{"id":"article-content","className":"article-module__Tnqyaa__content","dangerouslySetInnerHTML":{"__html":"$13"}}],["$","$L14",null,{"targetId":"article-content"}]]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:null
+15:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dd66bdf8a7e5707.js"],"IconMark"]
+9:{"metadata":[["$","title","0",{"children":"Megan Elisabeth Finch"}],["$","meta","1",{"name":"description","content":"Personal portfolio of Megan Elisabeth Finch"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L15","3",{}]],"error":null,"digest":"$undefined"}
+e:"$9:metadata"
