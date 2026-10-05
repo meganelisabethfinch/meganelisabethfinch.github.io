@@ -4,13 +4,26 @@ import Link from "next/link";
 import { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { profileLinks } from "../data/profileLinks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./header.module.css";
 
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
+  const renderProfileLink = (link, mobile = false) => (
+    <Nav.Link
+      key={link.id}
+      href={link.href}
+      target={link.external ? "_blank" : undefined}
+      rel={link.external ? "noopener noreferrer" : undefined}
+      className={styles.icon}
+      aria-label={link.label === "Curriculum Vitae" ? `${link.label} (opens in new tab)` : link.label}
+      onClick={mobile ? () => setExpanded(false) : undefined}
+    >
+      {link.icon ? <FontAwesomeIcon icon={link.icon} /> : link.shortLabel}
+    </Nav.Link>
+  );
 
   return (
     <>
@@ -36,36 +49,14 @@ export default function Header() {
             <Nav.Link as={Link} href="/blog" className={styles.navItem}>
               02. Blog
             </Nav.Link>
+            {profileLinks.map((link) => renderProfileLink(link))}
             <Nav.Link
-              href="/cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              as={Link}
+              href="/links"
               className={styles.icon}
-              aria-label="Curriculum Vitae (opens in new tab)"
+              aria-label="Links"
             >
-              CV
-            </Nav.Link>
-            <Nav.Link
-              href="https://github.com/meganelisabethfinch"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.icon}
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/megan-finch/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.icon}
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </Nav.Link>
-            <Nav.Link
-              href="mailto:megan.e.finch@durham.ac.uk"
-              className={styles.icon}
-            >
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faLink} />
             </Nav.Link>
           </Nav>
         </div>
@@ -90,36 +81,15 @@ export default function Header() {
               </Nav.Link>
 
               <div className={styles.mobileIcons}>
+                {profileLinks.map((link) => renderProfileLink(link, true))}
                 <Nav.Link
-                  href="/cv.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  as={Link}
+                  href="/links"
                   className={styles.icon}
-                  aria-label="Curriculum Vitae (opens in new tab)"
+                  aria-label="Links"
                   onClick={() => setExpanded(false)}
                 >
-                  CV
-                </Nav.Link>
-                <Nav.Link
-                  href="https://github.com/meganelisabethfinch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.icon}
-                  onClick={() => setExpanded(false)}
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </Nav.Link>
-                <Nav.Link
-                  href="https://www.linkedin.com/in/megan-finch/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.icon}
-                  onClick={() => setExpanded(false)}
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Nav.Link>
-                <Nav.Link href="mailto:megan.e.finch@durham.ac.uk" className={styles.icon} onClick={() => setExpanded(false)}>
-                  <FontAwesomeIcon icon={faEnvelope} />
+                  <FontAwesomeIcon icon={faLink} />
                 </Nav.Link>
               </div>
             </Nav>
