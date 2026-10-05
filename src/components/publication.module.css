@@ -1,0 +1,22 @@
+.publication {
+  margin-bottom: 1rem;
+}
+
+.publication:last-child {
+  margin-bottom: 0;
+}
+
+.title a {
+  color: var(--link-accent);
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8em;
+}
+
+.links a {
+  color: var(--link-accent);
+}

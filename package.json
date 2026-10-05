@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "postbuild": "touch out/.nojekyll",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out -b main",
     "start": "next start"

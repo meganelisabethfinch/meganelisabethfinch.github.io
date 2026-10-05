@@ -13,13 +13,13 @@ const nextConfig = {
     return config;
   },
 
-  // Static export -> writes HTML to `out/` during `next build`
+  // Export a static site to `out/` during `next build`
   output: 'export',
 
-  // Helpful on GitHub Pages (directory-style URLs)
+  // Nice with GitHub Pages for folder-style URLs
   trailingSlash: true,
 
-  // Needed if you use <Image> in export mode
+  // Required for <Image> with static export
   images: { unoptimized: true },
 };
 
