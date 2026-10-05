@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,7 +30,6 @@ export default function Header() {
       <Container className={styles.container} fluid>
         <Navbar.Brand
           className={`${styles.brand} ${styles.brandDistinct}`}
-          as={Link}
           href="/"
           style={{ fontWeight: 900, fontFamily: 'var(--font-inter)', fontStyle: 'italic' }}
         >
@@ -43,16 +41,15 @@ export default function Header() {
         {/* Desktop nav rendered inline (hidden on small screens via CSS) */}
         <div className={styles.rightNav}>
           <Nav className="ms-auto align-items-center">
-            <Nav.Link as={Link} href="/about" className={styles.navItem}>
+            <Nav.Link href="/about/" className={styles.navItem}>
               01. About
             </Nav.Link>
-            <Nav.Link as={Link} href="/blog" className={styles.navItem}>
+            <Nav.Link href="/blog/" className={styles.navItem}>
               02. Blog
             </Nav.Link>
             {profileLinks.map((link) => renderProfileLink(link))}
             <Nav.Link
-              as={Link}
-              href="/links"
+              href="/links/"
               className={styles.icon}
               aria-label="Links"
             >
@@ -73,18 +70,17 @@ export default function Header() {
       >
         <div className={styles.mobilePanel} onClick={(e) => e.stopPropagation()}>
             <Nav className="flex-column">
-              <Nav.Link as={Link} href="/about" className={styles.navItem} onClick={() => setExpanded(false)}>
+              <Nav.Link href="/about/" className={styles.navItem} onClick={() => setExpanded(false)}>
                 01. About
               </Nav.Link>
-              <Nav.Link as={Link} href="/blog" className={styles.navItem} onClick={() => setExpanded(false)}>
+              <Nav.Link href="/blog/" className={styles.navItem} onClick={() => setExpanded(false)}>
                 02. Blog
               </Nav.Link>
 
               <div className={styles.mobileIcons}>
                 {profileLinks.map((link) => renderProfileLink(link, true))}
                 <Nav.Link
-                  as={Link}
-                  href="/links"
+                  href="/links/"
                   className={styles.icon}
                   aria-label="Links"
                   onClick={() => setExpanded(false)}
