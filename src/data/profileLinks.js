@@ -6,7 +6,7 @@ export const profileLinks = [
     id: "cv",
     label: "Curriculum Vitae",
     shortLabel: "CV",
-    href: "/cv.pdf",
+    href: "/megan_finch_cv.pdf",
     icon: null,
     external: true,
   },
