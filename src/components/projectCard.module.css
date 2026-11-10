@@ -1,5 +1,9 @@
 .card {
   width: 100%;
+  /* The card is a <Link>; override Bootstrap's global `a` styles (blue + underline),
+     which can load after globals.css and win on equal specificity. */
+  color: #111;
+  text-decoration: none;
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -173,4 +177,12 @@
     box-shadow: 0 14px 40px rgba(12,12,12,0.12);
     z-index: 2; /* bring above neighbors during hover */
   }
+}
+
+/* Bootstrap's `a:hover` is more specific than `.card`, so restate on hover/focus. */
+.card:hover,
+.card:focus,
+.card:focus-visible {
+  color: #111;
+  text-decoration: none;
 }
